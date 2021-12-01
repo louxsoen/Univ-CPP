@@ -1,2 +1,2 @@
 
-    Person(int 
+    a.show();

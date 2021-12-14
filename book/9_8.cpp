@@ -15,19 +15,19 @@ public:
 class Oval : public Shape { // 타원
 public:
     Oval(string name, int x, int y) : Shape(name, x, y) { getArea(); }
-    double getArea() { return width * height * 3.14; }
+    virtual double getArea() { return width * height * 3.14; }
 };
 
 class Rect : public Shape { // 사각형
 public:
     Rect(string name, int x, int y) : Shape(name, x, y) { getArea(); }
-    double getArea() { return width * height; }
+    virtual double getArea() { return width * height; }
 };
 
 class Triangular : public Shape { // 타원
 public:
     Triangular(string name, int x, int y) : Shape(name, x, y) { getArea(); }
-    double getArea() { return width * height / 2; }
+    virtual double getArea() { return width * height / 2; }
 };
 
 int main()
